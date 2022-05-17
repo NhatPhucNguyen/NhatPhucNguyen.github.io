@@ -1,0 +1,81 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@500&family=Sora&display=swap');
+
+*{
+    padding: 0;      
+    box-sizing: border-box;
+}
+body{            
+    background-image: linear-gradient(120deg,#c31432,#240b36);
+    background-size: cover;
+    background-position: center;    
+    font-family: 'Inter', sans-serif;
+    margin: 0;        
+}
+.container{
+    width: 400px;
+    background: #ffffff;
+    border: none;
+    border-radius: 10px;
+    padding: 35px;
+    margin: auto;
+    margin-top: 30px;    
+}
+.container h1,h4{
+    text-align: center;
+    margin-bottom: 2px;
+}
+.container h6{
+    text-align: center;
+    margin-top: 10px;
+}
+.form-input{
+    width: 100%;
+    margin-top:10px;
+}
+.form-input input{
+    width: 100%;
+    font-size: 16px;
+    font-family: 'Inter', sans-serif;
+    padding: 5px;
+    border: none;
+    outline: none;
+    border-bottom: 2px solid #adadad;
+    transition: 0.3s;
+}
+.form-input input:focus{
+    background-color: #eacfff;
+    border-bottom: 2px solid #a024ff;
+}
+.form-input.error small{    
+    color: #ff0000;    
+}
+.form-input.error input{
+    border-bottom: 2px solid #ff0000;
+}
+.form-input.success input{
+    border-bottom: 2px solid #0ffc03;
+}
+.button-container{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    margin-top: 10px;
+}
+.button-container button{
+    width: 150px;
+    height: 50px;
+    border-radius: 50px;
+    border: none;
+    outline: none;
+    background-color: #a024ff;
+    color: #ffffff;
+    font-size: 16px;
+    font-weight: bold;
+    transition: 0.3s;
+}
+.button-container button:hover{
+    background-color: #501679;
+}
+.button-container button:active{
+    background-color: #a024ff;
+}

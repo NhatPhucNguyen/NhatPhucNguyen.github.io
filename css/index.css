@@ -1,0 +1,25 @@
+body{
+    background-image: url(../images/assignments/A1/dark-night.jpeg);
+    background-size: cover;
+    font-family: 'Arial', Courier, monospace;
+    background-color:rgba(0, 0, 0, 0.801);
+    color:whitesmoke;    
+}
+header{
+    font-family: 'Arvo', Arial, monospace;
+    color:rgb(216, 7, 206);
+}
+#my-link a{
+    color: rgb(0, 140, 255);
+    text-decoration:none underline;
+}
+#my-link a:hover{
+    color:burlywood;
+}
+#my-link ul{
+    list-style-image: url(../images/assignments/A1/blue-star-animated-3.gif);
+}
+hr{
+    border-style:solid; border-color:gray;
+    border-width:2px;
+}
