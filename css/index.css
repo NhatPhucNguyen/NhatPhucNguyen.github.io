@@ -1,5 +1,5 @@
 body{
-    background-image: url(../images/assignments/A1/dark-night.jpeg);
+    background-image: url(../images/assignments/A1/camhang.jpg);
     background-size: cover;
     font-family: 'Arial', Courier, monospace;
     background-color:rgba(0, 0, 0, 0.801);
@@ -22,4 +22,7 @@ header{
 hr{
     border-style:solid; border-color:gray;
     border-width:2px;
+}
+#sub-img{
+    opacity: 0;
 }
