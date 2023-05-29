@@ -1,0 +1,79 @@
+.projects-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1em;
+}
+.project-select{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 1em;
+}
+.img-container {
+    display: flex;
+    flex-direction: row;
+    position: relative;
+    width: min-content;
+    justify-content: center;
+    align-items: center;
+    gap: 2em;
+    padding: 1em;
+}
+
+.img-start {
+    width: 12em;
+    z-index: 0;
+    opacity: 0.5;
+    scale: 0.8;
+}
+
+.img-mid {
+    position: absolute;
+    width: 13em;
+    z-index: 1;
+    animation: scaleUp 0.6s ease-in-out;
+
+}
+
+.img-mid:hover {
+    cursor: pointer;
+}
+
+.img-end {
+    width: 12em;
+    z-index: 0;
+    opacity: 0.5;
+    scale: 0.8;
+}
+
+.projects-container button {
+    padding: 0.3em;
+    background-color: rgb(103, 103, 103,0.3);
+    border: none;
+    outline: none;
+    color: #ffffff;
+    padding: 0.5em;
+}
+.projects-container button:hover{
+    color: #7BF767;
+}
+.projects-container button:active{
+    color: #02c202;
+}
+@keyframes scaleUp {
+    from {
+        scale: 0.8;
+    }
+
+    to {
+        scale: 1;
+    }
+}
+@media screen and (max-width:650px){
+    .img-container img{
+        width: 6.5em;
+    }
+}

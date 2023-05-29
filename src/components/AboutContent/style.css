@@ -1,0 +1,61 @@
+.about-container {
+    display: grid;
+    grid-template-columns: 70% 30%;
+    height: inherit;
+    animation: movePanel 0.8s ease-in-out;
+    justify-content: center;
+    align-items: center;
+}
+
+.about-container .panel {
+    height: inherit;
+    background-color: #7BF767;
+}
+
+.pd-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1em;
+    padding: 0.5em;
+}
+
+.pd-container .description {
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+    justify-content: center;
+    align-items: center;
+}
+
+.description h2{
+    text-align: center;
+}
+.btn-contact{
+    background-color: #FF3C3C;
+    color: #FFFFFF;
+    transition: 0.4s all ease-in-out;
+}
+.btn-contact:hover{
+    background-color: #FF7272;
+}
+@keyframes movePanel {
+    from {
+        transform: translateX(-70%);
+    }
+
+    to {
+        transform: translateX(0);
+    }
+}
+@media only screen and (max-width: 600px) {
+    .about-container{
+        display: block;
+        flex-direction: column;
+    }
+    .panel{
+        display: none;
+    }
+}
