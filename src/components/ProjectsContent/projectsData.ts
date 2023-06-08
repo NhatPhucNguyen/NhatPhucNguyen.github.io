@@ -1,7 +1,8 @@
 export type Project = {
     id: string;
     name: string;
-    description: string;
+    overview: string;
+    purposes: string[];
     technologies: string[];
     img: string;
     link: string;
@@ -17,16 +18,26 @@ export const projects: Project[] = [
     {
         id: "1",
         name: "Weather Forecast",
-        description: "Predicting Weather",
-        technologies: ["HTML", "CSS", "TS", "React"],
+        overview: `The Weather Forecast is a web application to predict the
+        conditions of the atmosphere for a given city or user's current
+        location, using the Weather API - OpenWeatherMap. The
+        application was implemented by ReactJs framework with Typescript`,
+        purposes: [
+            `User can check the current condition of weather by giving
+        the city name or current location`,
+            `Show the prediction of weather's condition in next 5 days so
+        that user can prepare their plan wisely`,
+        ],
+        technologies: ["HTML", "CSS", "TS", "React", "Fetching API"],
         img: "weather-forecast.png",
-        link: "",
+        link: "https://the-weather-forecast.vercel.app/",
         github: "",
     },
     {
         id: "2",
         name: "Quiz Tools",
-        description: "Doing Quiz",
+        overview: "Doing Quiz",
+        purposes: [],
         technologies: ["HTML", "CSS", "TS", "React"],
         img: "quiz.png",
         link: "",
@@ -35,7 +46,8 @@ export const projects: Project[] = [
     {
         id: "3",
         name: "Investment",
-        description: "Doing Stocks",
+        overview: "Doing Stocks",
+        purposes: [],
         technologies: ["HTML", "CSS", "TS", "React"],
         img: "investment.png",
         link: "",

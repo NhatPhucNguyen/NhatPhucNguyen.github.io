@@ -14,6 +14,9 @@ const ImageContainer = ({ projectNode }: { projectNode: ProjectNode }) => {
                 className="img-mid"
                 src={`/${projectNode.current.img}`}
                 alt=""
+                onClick={() => {
+                    window.open(projectNode.current.link, "_blank");
+                }}
             />
             <img
                 key={projectNode.next.id}

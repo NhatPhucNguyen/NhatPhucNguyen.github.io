@@ -6,6 +6,7 @@ interface Message {
     subject: string;
     content: string;
 }
+// eslint-disable-next-line @typescript-eslint/no-inferrable-types
 const expression: RegExp = /^[A-Z0-9._%+-]+@[A-Z0-9.-]+\.[A-Z]{2,}$/i;
 const Form = () => {
     const emptyMessage: Message = {
@@ -75,7 +76,6 @@ const Form = () => {
                         placeholder="Full name"
                         className="form-control"
                         name="name"
-                        autoFocus={true}
                         maxLength={100}
                         onChange={handleChange}
                         value={message.name}

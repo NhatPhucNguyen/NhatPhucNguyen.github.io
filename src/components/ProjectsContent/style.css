@@ -63,6 +63,26 @@
 .projects-container button:active{
     color: #02c202;
 }
+
+.project-item{
+    display: flex;
+    flex-direction: column;
+    width: 50em;
+    padding: 0.5em;
+    gap: 0.5em;
+    animation: moveDown 0.8s ease-in-out;
+}
+.project-item h3{
+    text-align: center;
+}
+.technologies-list{
+    display: flex;
+    flex-direction: row;
+    gap: 2em;
+    align-items: center;
+    justify-content: center;
+    
+}
 @keyframes scaleUp {
     from {
         scale: 0.8;

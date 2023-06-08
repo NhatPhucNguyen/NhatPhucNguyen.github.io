@@ -2,10 +2,11 @@ import ImageContainer from "./ImageContainer";
 import "./style.css";
 import { projectsData } from "./projectsData";
 import { MouseEvent, useState } from "react";
+import ProjectItem from "./ProjectItem";
 const ProjectsContent = () => {
-    const [ProjectNode, setProject] = useState(projectsData[0]);
+    const [projectNode, setProject] = useState(projectsData[0]);
     const handleClick = (e: MouseEvent<HTMLButtonElement>) => {
-        let currentIndex = projectsData.indexOf(ProjectNode);
+        let currentIndex = projectsData.indexOf(projectNode);
         if (e.currentTarget.name == "right") {
             if (currentIndex < projectsData.length - 1) {
                 setProject(projectsData[currentIndex + 1]);
@@ -31,7 +32,7 @@ const ProjectsContent = () => {
                 >
                     <i className="fa-solid fa-angle-left fa-2xl"></i>
                 </button>
-                <ImageContainer projectNode={ProjectNode} />
+                <ImageContainer projectNode={projectNode} />
                 <button
                     name="right"
                     className="arrow-right"
@@ -40,12 +41,14 @@ const ProjectsContent = () => {
                     <i className="fa-solid fa-angle-right fa-2xl"></i>
                 </button>
             </div>
-            <h3 className="project-name highlight">{ProjectNode.current.name}</h3>
-            <div className="project-detail">
-            </div>
-            <div>
-                <h2>This project is still in progress.</h2>
-            </div>
+            <a href={projectNode.current.link} className="project-name highlight" target="_blank">
+                <h3 >
+                    {projectNode.current.name}
+                </h3>
+            </a>
+
+            <div className="project-detail"></div>
+            <ProjectItem project={projectNode.current} />
         </div>
     );
 };
