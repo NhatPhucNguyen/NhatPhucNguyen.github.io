@@ -3,7 +3,7 @@ import { Project } from "./projectsData";
 
 const ProjectItem = ({ project }: { project: Project }) => {
     return (
-        <Fragment>
+        <Fragment key={project.id}>
             {project.purposes.length < 1 ? (
                 <h2>Project is still in process</h2>
             ) : (
@@ -22,6 +22,14 @@ const ProjectItem = ({ project }: { project: Project }) => {
                             return <span>{tech}</span>;
                         })}
                     </div>
+
+                    <a
+                        target="_blank"
+                        href={project.github}
+                        className="highlight"
+                    >
+                        See my code here !
+                    </a>
                 </section>
             )}
         </Fragment>

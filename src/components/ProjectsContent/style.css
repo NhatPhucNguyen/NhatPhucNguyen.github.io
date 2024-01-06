@@ -1,17 +1,21 @@
 .projects-container {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    gap: 1em;
+    width: 100%;
+    padding-bottom: 1rem;
 }
-.project-select{
+
+.projects-container h3 {
+    text-align: center;
+    margin-top: 1rem;
+}
+
+.project-select {
     display: flex;
     flex-direction: row;
     justify-content: center;
     align-items: center;
     gap: 1em;
 }
+
 .img-container {
     display: flex;
     flex-direction: row;
@@ -51,38 +55,59 @@
 
 .projects-container button {
     padding: 0.3em;
-    background-color: rgb(103, 103, 103,0.3);
+    background-color: rgb(103, 103, 103, 0.3);
     border: none;
     outline: none;
     color: #ffffff;
     padding: 0.5em;
 }
-.projects-container button:hover{
+
+.projects-container button:hover {
     color: #7BF767;
 }
-.projects-container button:active{
+
+.projects-container button:active {
     color: #02c202;
 }
 
-.project-item{
-    display: flex;
-    flex-direction: column;
-    width: 50em;
+.project-item {
     padding: 0.5em;
-    gap: 0.5em;
     animation: moveDown 0.8s ease-in-out;
+    width: 50rem;
+    margin: auto;
 }
-.project-item h3{
+
+.project-item p {
+    text-wrap: wrap;
+    word-wrap: break-word;
+    margin-top: 0.5rem;
+}
+
+.project-item ul {
+    margin-top: 0.5rem;
+}
+
+.project-item div {
+    margin-top: 0.5rem;
+}
+.project-item .highlight {
     text-align: center;
+    display: block;
+    margin-top: 0.5rem;
+    color: rgb(22, 193, 193);
+    &:hover{
+        color: rgb(27, 234, 234);
+    }
 }
-.technologies-list{
+.technologies-list {
     display: flex;
     flex-direction: row;
     gap: 2em;
     align-items: center;
     justify-content: center;
-    
+
 }
+
 @keyframes scaleUp {
     from {
         scale: 0.8;
@@ -92,8 +117,16 @@
         scale: 1;
     }
 }
-@media screen and (max-width:650px){
-    .img-container img{
+
+@media screen and (max-width:850px) {
+    .project-item {
+        width: 100%;
+        padding: 0 2rem;
+    }
+}
+
+@media screen and (max-width:650px) {
+    .img-container img {
         width: 6.5em;
     }
 }

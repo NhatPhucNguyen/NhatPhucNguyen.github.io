@@ -6,7 +6,7 @@ import ProjectItem from "./ProjectItem";
 const ProjectsContent = () => {
     const [projectNode, setProject] = useState(projectsData[0]);
     const handleClick = (e: MouseEvent<HTMLButtonElement>) => {
-        let currentIndex = projectsData.indexOf(projectNode);
+        const currentIndex = projectsData.indexOf(projectNode);
         if (e.currentTarget.name == "right") {
             if (currentIndex < projectsData.length - 1) {
                 setProject(projectsData[currentIndex + 1]);
