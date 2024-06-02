@@ -1,27 +1,27 @@
-import { ProjectNode } from "./projectsData";
+import { Project } from "./projectsData";
 
-const ImageContainer = ({ projectNode }: { projectNode: ProjectNode }) => {
+const ImageContainer = ({ projects }: { projects: Project[] }) => {
     return (
         <div className="img-container">
             <img
-                key={projectNode.prev.id}
+                key={projects[0].id}
                 className="img-start"
-                src={`/${projectNode.prev.img}`}
+                src={`/${projects[0].img}`}
                 alt=""
             />
             <img
-                key={projectNode.current.id}
+                key={projects[1].id}
                 className="img-mid"
-                src={`/${projectNode.current.img}`}
+                src={`/${projects[1].img}`}
                 alt=""
                 onClick={() => {
-                    window.open(projectNode.current.link, "_blank");
+                    window.open(projects[1].link, "_blank");
                 }}
             />
             <img
-                key={projectNode.next.id}
+                key={projects[2].id}
                 className="img-end"
-                src={`/${projectNode.next.img}`}
+                src={`/${projects[2].img}`}
                 alt=""
             />
         </div>

@@ -10,7 +10,7 @@ const ProjectItem = ({ project }: { project: Project }) => {
                 <section className="project-item">
                     <h3>Project Overview:</h3>
                     <p>{project.overview}</p>
-                    <h3>Purposes:</h3>
+                    <h3>Main Features:</h3>
                     <ul>
                         {project.purposes.map((purpose) => {
                             return <li>{purpose}</li>;

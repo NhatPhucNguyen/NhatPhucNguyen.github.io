@@ -3,11 +3,10 @@
     padding-bottom: 1rem;
 }
 
-.projects-container h3 {
+.projects-container h3,.projects-container h2 {
     text-align: center;
     margin-top: 1rem;
 }
-
 .project-select {
     display: flex;
     flex-direction: row;
@@ -27,13 +26,6 @@
     padding: 1em;
 }
 
-.img-start {
-    width: 12em;
-    z-index: 0;
-    opacity: 0.5;
-    scale: 0.8;
-}
-
 .img-mid {
     position: absolute;
     width: 13em;
@@ -46,7 +38,7 @@
     cursor: pointer;
 }
 
-.img-end {
+.img-end,.img-start {
     width: 12em;
     z-index: 0;
     opacity: 0.5;
@@ -102,10 +94,11 @@
 .technologies-list {
     display: flex;
     flex-direction: row;
-    gap: 2em;
+    gap: 1rem 2em;
     align-items: center;
     justify-content: center;
-
+    margin: auto;
+    flex-wrap: wrap;
 }
 
 @keyframes scaleUp {
@@ -117,7 +110,6 @@
         scale: 1;
     }
 }
-
 @media screen and (max-width:850px) {
     .project-item {
         width: 100%;

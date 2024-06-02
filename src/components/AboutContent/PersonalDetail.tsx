@@ -16,7 +16,7 @@ const PersonalDetail = () => {
                 </p>
                 <p>
                     My skills include: HTML/CSS, JavaScript, Typescript, C#,
-                    React, Bootstrap, NodeJs, ExpressJs, SQL, MongoDb, Agile
+                    React, Next.js, Tailwind CSS, Bootstrap, NodeJS, ExpressJS, PostgreSQL, MongoDb, Git, and more.
                 </p>
                 <p>
                     I am a creative problem solver who enjoys working
